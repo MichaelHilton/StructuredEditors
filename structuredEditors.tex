@@ -139,29 +139,112 @@ Place to keep some ideas for Structured Editor research.
 
 \section{Introduction}
 
+\section{Big Ideas}
+Here are some big ideas we have for this project.
+
+\textbf{AST Editor:} The editor we are designing should be one where the users directly manipulate the Abstract Syntax Tree.  This is also called a Projectional Editor, as what they are editing is a projecting of the AST.
+
+\textbf{Keyboard and Mouse Input:} We believe that programmers prefer to use keyboards, and any serious development environment must support keyboards as the primary input mechanism.
+
+\textbf{Web based:} The quickest way for this tool to become available to others is via a web environment.  We anticipate that this will be a web-based experience.
+
+\textbf{Functional:} The language that we develop will be functional in nature.  This will make for a cleaner, better language for the users, as well as making the implementation much simpler.
+
+\textbf{Document Programming Model:}  We believe that the metaphor for this language should be a document.  
+
+
+\section{Implementation Details:}
+We are currently evaluating two candidates for implemention, elm and js of OCaml.  We are all agreed at this point that we want something that compiles down to JS, to be run in the browser:
+
+\textbf{Discussion}
+
+\textbf{JsofOCaml}
+
++ Company Support
+
++ Build on Robust OCaml ecosystem
+
++ Lots of Docs
+
+- Calling external JS is UGLY
+
+- Build for porting OCaml code to JS
+
+- Applet style of programming
+
+
+
+\textbf{elm:}
+
++ JS interopability
+
++ Much closer to standard HTML
+
++ Uses MVC so apps are structured nicely.
+
++ Build for creating Web apps from the ground up
+
++ Functional Reactive Language
+
++ Good tool support (Elm Reactor with Time Traveling Debugging)
+
+
+\section{Road Map:}
+Currently we are evaluating technology and coming up with User Stories as a way to build requirements.  
+
+The next step is to develop a proof of concept demo.
+From there we will begin to implement specific features, focusing on features that support Cyrus's Research and Matt's teaching.
+
+
+\textbf{TBD:} 
+
+Decide what stories to prioritize.
+
+Decide for targets for publication.
+
+
+
 \section{User Stories}
-\textbf{Card:}As a Professor, you want define a grammar and allow students to create trees in this grammar so students can understand the set of legal trees in a grammar.
+\textbf{Card:}As a User, I want to be able to create new AST trees (programs) so that I can use the system
 
 \textbf{Conversation:} 
 
-\textbf{Confirmation:}
+\textbf{Confirmation:}\\
+
+\textbf{Card:}As a User, I want to be able to edit existing AST trees (programs) so that I can use the system
+
+\textbf{Conversation:} 
+
+\textbf{Confirmation:}\\
+
+\textbf{Card:}As a User, I want to be able to view the output of a program so that I understand if it is doing what I want.
+
+\textbf{Conversation:} 
+
+\textbf{Confirmation:}\\
+
+
+\textbf{Card:}As a Professor, I want define a grammar and allow students to create trees in this grammar so students can understand the set of legal trees in a grammar.
+
+\textbf{Conversation:} 
+
+\textbf{Confirmation:}\\
 
 
 
 
-\textbf{Card:}As a Researcher you want to be able to apply probability technique over ASTs so that you can justify your claims that this is useful for code editors.
+\textbf{Card:}As a Researcher I want to be able to apply probability technique over ASTs so that I can justify your claims that this is useful for code editors.
 
 \textbf{Conversation:}
 
-\textbf{Confirmation:}
+\textbf{Confirmation:}\\
 
 
-\section{User Stories}
-\textbf{Card:}As a Researcher, you want an environment to trees based on some characteristic so to better understand the probability.
+\textbf{Card:}As a Researcher, I want an environment to examine trees based on some characteristic so to better understand the probability.
 
 \textbf{Conversation:}
 
-\textbf{Confirmation:}
+\textbf{Confirmation:}\\
 
 
 
